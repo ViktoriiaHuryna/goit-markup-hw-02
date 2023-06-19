@@ -1,15 +1,17 @@
 :root {
   /* Font */
   --primary-font: Roboto, sans-serif;
+  /* Colors */
   --headings-cl: #2E2F42;
   --text-cl: #434455;
-  --CTA-cl: #4D5AE5;
-  
-  /* Colors */
-
+  --CTA-iris: #4D5AE5;
+  --CTA-ocean: #404BBF;
+  --light-bg: #F4F4FD;
+  --white-cl: white;
+  --acent-cl: #E7E9FC; 
 }
 
-.body {
+body {
   font-family: var(--primary-font);
   color: var(--text-cl);
   line-height: 1.5;
@@ -27,6 +29,7 @@ ol {
 a {
   text-decoration: none;
   color: currentColor;
+  font-style: normal;
 }
 
 button {
@@ -40,8 +43,11 @@ button {
   |============================
 */
 
+.header {}
+
 .header-nav {
   color: var(--headings-cl);
+  font-weight: 500;
 }
 
 .header-logo {
@@ -52,7 +58,7 @@ button {
 }
 
 .header-logo-blue {
-  color: var(--CTA-cl);
+  color: var(--CTA-iris);
 }
 
 .link {}
@@ -61,42 +67,141 @@ button {
 
 .header-item {}
 
-.header-link {}
+.header-link {
+  font-weight: 500;
+}
+
+.header-link:hover, .header-address-list.link:hover {
+  color: var(--CTA-ocean);
+}
 
 .header-address {}
 
-.header-address-list {}
+.header-address-list {
+  
+}
+
+.header-address-list-link {
+color: var(--text-cl);
+}
 
 .main {}
 
 .section {}
 
-.hero {}
+/**
+  |============================
+  | Hero Styles
+  |============================
+*/
+
+.hero {
+  background-color: var(--headings-cl);
+  color: var(--white-cl);
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
 
 .hero-title {}
 
-.hero-btn {}
+.hero-btn {
+  background-color: var(--CTA-iris);
+  font-weight: 500;
+  color: var(--white-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+}
+
+/**
+  |============================
+  | Features styles
+  |============================
+*/
 
 .features {}
 
-.section-hero-subtitle {}
+.section-features-subtitle, .portfolio-subtitle, .section-team-name {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--headings-cl);
+}
+
+/**
+  |============================
+  | What are we doing section
+  |============================
+*/
 
 .product {}
 
-.section-product-title {}
+.section-product-title, .section-team-title {
+  line-height: 1.1;
+  font-size: 36px;
+  color: var(--headings-cl);
+  text-transform: capitalize;
+  text-align: center;
+}
 
-.team {}
+/**
+  |============================
+  | Team section styles
+  |============================
+*/
+
+.team {
+  text-align: center;
+  background-color: var(--light-bg);
+}
 
 .section-team-title {}
 
-.section-team-name {}
+.section-team-name {
+}
+
+.team-list {}
+
+.team-item {
+  background-color: var(--white-cl);
+}
+
+/**
+  |============================
+  | Portfolio styles
+  |============================
+*/
 
 .portfolio {}
 
 .section {}
 
-.portfolio-btn {}
+.portfolio-btn {
+  font-weight: 500;
+  text-align: center;
+    letter-spacing: 0.04em;
+    color: var(--CTA-iris);
+    background-color: var(--light-bg);
+    border: 1px solid var(--acent-cl);
+      border-radius: 4px;
+      text-transform: capitalize;
+}
 
-.portfolio-subtitle {}
+.portfolio-btn:hover, .portfolio-btn:focus {
+background-color: var(--CTA-ocean);
+color: var(--white-cl);
+}
 
-.footer {}
+.portfolio-subtitle {
+}
+
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+
+.footer {
+  background-color: var(--headings-cl);
+  color: var(--light-bg);
+}
