@@ -77,7 +77,7 @@ button {
   color: var(--headings-cl)
 }
 
-.header-link:hover, .header-link:focus .header-address.link:hover, .header-address.link:focus, .hero-btn:hover, .hero-btn:focus {
+.header-link:hover, .header-link:focus, .header-address.link:hover, .header-address.link:focus, .hero-btn:hover, .hero-btn:focus {
   color: var(--CTA-ocean);
 }
 
