@@ -15,7 +15,8 @@ body {
   font-family: var(--primary-font);
   color: var(--text-cl);
   line-height: 1.5;
-  letter-spacing: -0.02em;
+  letter-spacing: 0.02em;
+  background-color: var(--white-cl);
 }
 
 /* Reset */
@@ -26,7 +27,7 @@ ol {
 }
 
 
-a {
+.link {
   text-decoration: none;
   color: currentColor;
   font-style: normal;
@@ -46,43 +47,47 @@ button {
 .header {}
 
 .header-nav {
-  color: var(--headings-cl);
-  font-weight: 500;
 }
 
 .header-logo {
     font-family: Raleway, sans-serif;
       font-weight: 800;
       font-size: 18px;
-      line-height: 1.16;
+      line-height: 1.17;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: var(--CTA-iris);
 }
 
 .header-logo-blue {
-  color: var(--CTA-iris);
+  color: var(--headings-cl);
 }
 
 .link {}
 
-.header-list {}
+.list {}
 
 .header-item {}
 
 .header-link {
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--headings-cl)
 }
 
-.header-link:hover, .header-address-list.link:hover {
+.header-link:hover, .header-link:focus .header-address.link:hover, .header-address.link:focus, .hero-btn:hover, .hero-btn:focus {
   color: var(--CTA-ocean);
 }
 
-.header-address {}
-
-.header-address-list {
-  
+.header-address {
+  font-style: normal;
 }
 
-.header-address-list-link {
+.header-address.link {
 color: var(--text-cl);
+letter-spacing: 0.02em;
 }
 
 .main {}
@@ -97,17 +102,22 @@ color: var(--text-cl);
 
 .hero {
   background-color: var(--headings-cl);
-  color: var(--white-cl);
+}
+
+.hero-title {
   font-size: 56px;
   line-height: 1.07;
   text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--white-cl);
 }
-
-.hero-title {}
 
 .hero-btn {
   background-color: var(--CTA-iris);
   font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
   color: var(--white-cl);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
@@ -121,12 +131,18 @@ border-radius: 4px;
 
 .features {}
 
-.section-features-subtitle, .portfolio-subtitle, .section-team-name {
+.features-item {}
+
+
+.section-features-subtitle, .portfolio-subtitle, .team-name {
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
   color: var(--headings-cl);
+  letter-spacing: 0.02em;
 }
+
+.features-text {}
 
 /**
   |============================
@@ -134,13 +150,16 @@ border-radius: 4px;
   |============================
 */
 
-.product {}
+.section-product {}
+
+.section-product-list-item {}
 
 .section-product-title, .section-team-title {
-  line-height: 1.1;
+  line-height: 1.11;
   font-size: 36px;
   color: var(--headings-cl);
   text-transform: capitalize;
+  letter-spacing: 0.02em;
   text-align: center;
 }
 
@@ -151,19 +170,21 @@ border-radius: 4px;
 */
 
 .team {
-  text-align: center;
   background-color: var(--light-bg);
+  letter-spacing: 0.02em;
 }
 
 .section-team-title {}
 
-.section-team-name {
+.team-name {
 }
 
-.team-list {}
-
-.team-item {
+.team-list-item {
   background-color: var(--white-cl);
+}
+
+.team-name-job {
+  font-size: 16px;
 }
 
 /**
@@ -178,7 +199,7 @@ border-radius: 4px;
 
 .portfolio-btn {
   font-weight: 500;
-  text-align: center;
+  line-height: 1.5;
     letter-spacing: 0.04em;
     color: var(--CTA-iris);
     background-color: var(--light-bg);
@@ -192,8 +213,19 @@ background-color: var(--CTA-ocean);
 color: var(--white-cl);
 }
 
-.portfolio-subtitle {
-}
+.portfolio-subtitle {}
+
+.portfolio-filters {}
+
+.portfolio-filters-item {}
+
+.portfolio-examples {}
+
+.portfolio-examples-list-item {}
+
+.portfolio-examples-text {}
+
+
 
 /**
   |============================
@@ -203,5 +235,13 @@ color: var(--white-cl);
 
 .footer {
   background-color: var(--headings-cl);
+  color: var(--light-bg);
+}
+
+.footer-text {
+  letter-spacing: 0.02em;
+}
+
+.footer-logo-light {
   color: var(--light-bg);
 }
